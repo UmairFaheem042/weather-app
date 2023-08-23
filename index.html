@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather APP</title>
+
+  <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,500,100,700,400,300,200,900&display=swap"
+    rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <link rel="icon" href="favicon.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container dark">
+    <div class="appName">
+      <a href="index.html">
+        <span><img src="favicon.png" alt=""> Weather App</span>
+      </a>
+      <i class="ri-sun-line"></i>
+    </div>
+    <header>
+      <input type="text" class="search" placeholder="Search for a region">
+      <i class="ri-search-line searchBtn"></i>
+    </header>
+
+    <main>
+      <div class="regionName">NaN</div>
+
+      <div class="dateTime">Sunday, 12 December 2099</div>
+
+      <div class="weatherIcon">
+        <!-- <img src="http://openweathermap.org/img/wn/02d@4x.png" alt="weatherIcon"> -->
+      </div>
+
+      <div class="weatherforecast">
+
+        <p class="description">NaN</p>
+
+        <div class="temperature-box">
+          <h1 class="temperature">0&#176C</h1>
+
+          <div class="minmax">
+            <span class="max">
+              <i class='bx bxs-up-arrow-alt'>0&#176C</i>
+            </span>
+            <span class="min">
+              <i class='bx bxs-down-arrow-alt'>0&#176C</i>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="moreforecast">
+        <div class="box">
+          <i class="ri-drop-line"></i>
+          <div class="text">
+            <p>Humidity</p>
+            <p class='number humidity'>0%</p>
+          </div>
+        </div>
+
+        <div class="box">
+          <i class="ri-temp-hot-line"></i>
+          <div class="text">
+            <p>Real Feel</p>
+            <p class='number realFeel'>0&#176C</p>
+          </div>
+        </div>
+
+        <div class="box">
+          <i class="ri-windy-line"></i>
+          <div class="text">
+            <p>Wind</p>
+            <p class='number windSpeed'>0 m/s</p>
+          </div>
+        </div>
+
+        <div class="box">
+          <i class="ri-speed-up-line"></i>
+          <div class="text">
+            <p>Pressure</p>
+            <p class='number pressure'>0 hPa</p>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <footer>
+      <p>Made By Umair Faheem</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+  <script src="dayAndNight.js"></script>
+</body>
+
+</html>

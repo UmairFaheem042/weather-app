@@ -1,0 +1,171 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Cabinet Grotesk', sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+body{
+  background: #171717;
+  color: #fff;
+}
+
+.container{
+  display: flex;
+  align-items:stretch;
+  flex-direction: column;
+  width: 100%;
+  padding: 2rem;
+  max-width:1200px;
+  margin: 0 auto;
+}
+
+.appName{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  font-size:2rem;
+  font-weight: 600;
+}
+
+.appName i{
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.appName img{
+  width: 25px ;
+  height: 25px;
+  margin-right: 10px;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+header input{
+  border: none;
+  width: 100%;
+  background: #1e1e1e;
+  color: #fff;
+  height: 60px;
+  padding: 5px 20px;
+  border-radius: 10px;
+  outline: none;
+}
+
+header i{
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+main{
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.regionName{
+  font-size:2.5rem;
+  font-weight: 600;
+}
+
+.dateTime{
+  font-size:1rem;
+}
+.weatherforecast{
+  margin-top:0rem;
+}
+
+.weatherIcon img{
+  width: 120px;
+  height: 120px;
+}
+
+.description{
+  background: #1e1e1e;
+  width: max-content;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.temperature-box{
+  margin: 1rem 0 0;
+}
+.temperature{
+  font-size: 3.5rem;
+}
+
+.min, .max{
+  font-size: 1rem;
+}
+
+.moreforecast{
+  margin: 2rem auto 0rem;
+  display: grid;
+  grid-template-columns: none;
+  grid-gap: 1rem; 
+}
+
+.moreforecast .box{
+  background: #1e1e1e;
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.moreforecast .box i{
+  font-size: 2rem;
+}
+
+.moreforecast .box .text{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.moreforecast .box .text p.number{
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+footer{
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+
+@media(min-width: 550px){
+
+  .appName{
+    margin-bottom: 1rem;
+  }
+
+  .appName span{
+    font-size: 1.5rem;
+  }
+
+  .appName img{
+    width: 20px ;
+    height: 20px;
+  }
+  
+  .moreforecast{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
